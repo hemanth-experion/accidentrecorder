@@ -1,0 +1,22 @@
+@import "bootstrap";
+$fontColor : black;
+$importantColor : red;
+$backgroundColor : #dee2e8;
+$normalFontSize :12px;
+$containerMargin : 25%;
+$backgroundImageUrl : "";
+body{
+    background-image: $backgroundImageUrl;
+    background: $backgroundColor;
+}
+.container{
+        margin-left : $containerMargin;
+        margin-right :$containerMargin;
+}
+#mainHead{
+    color : $importantColor;
+    margin: 50px;
+}
+.mandatoryNotation{
+    color : $importantColor;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Accident Details Overview</title>
+    <link rel="stylesheet" href="accidentReporter.css">
+	<link rel="stylesheet" href="../jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="../jquery-ui.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="../jquery-ui/jquery-ui.min.js"></script>
+	<script src="accidentDetails.js"></script>
+	
+</head>
+
+<body>
+	<div class="container align">
+		<h2>Accident Details Overview</h2><br />
+		<!--Form for entering data-->
+		<form class="form-horizontal form-group " action="#">
+			<div class="row col-sm-4">
+				<div>
+					<label id="formLabelReferenceNumber" class=" col-form-label"> Reference Number :</label>
+				</div>
+				<div>
+					<label id="formLabelAccidentDate" class=" col-form-label"> Accident Date :</label>
+				</div>
+				<div>
+					<label id="formLabelAccidentTime" class=" col-form-label">  Accident Time :</label>
+				</div>
+				<div>
+					<label id="formLabelAccidentType" class=" col-form-label"> Accident Type :</label>
+				</div>
+				<div>
+					<label id="formLabelCity" class=" col-form-label"> City :</label>
+				</div>
+				<div>
+					<label id="formLabelDistrict" class=" col-form-label"> District :</label>
+				</div>
+				<div>
+					<label id="formLabelNumberOfVehicles" class=" col-form-label"> Number of vehicles :</label>
+				</div>
+				<div>
+					<label id="formLabelNumberOfCasualties" class=" col-form-label"> Number of casualties :</label>
+				</div>
+				<div>
+					<label id="formLabelReportingOfficer" class=" col-form-label"> Reporting officers name :</label>
+				</div>
+				<div>
+					<label id="formLabelAccidentImages" class=" col-form-label"> Accident Image:</label>
+				</div>
+                <div class="col-sm-6">
+					<input type="button" id="editButton" value="Edit" class="btn btn-primary">
+			    	<input type="button" id="confirmButton" class=" btn btn-success " value="Confirm">     
+				</div>
+			</div>
+		</form>
+	</div>
+    <div id="dialog" hidden> Data inserted successfully</div>
+</body>
+
+</html>

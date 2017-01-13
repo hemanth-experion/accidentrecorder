@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Accident Reporter</title>
+	<link rel="stylesheet" href="../jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="accidentReporter.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="../jquery-ui/jquery-ui.min.js"></script>
+	<script src="accidentReporter.js"></script>
+	
+</head>
+
+<body>
+	<div class="container">
+		<h2 id="mainHead">ACCIDENT DETAILS</h2>
+		<form id="accidentInputForm" action="accidentDetails.html">
+			<div class="form-group row">
+				<label for="formLableReferenceNumber" class="col-sm-2 ">Reference Number <span class="mandatoryNotation"> * </span>:</label>
+				<div class="col-sm-3">
+					<input type="text" required class="form-control" title ="Format:Atleast one uppercase letter and digits." id="formIdReferenceNumber" maxlength="50" pattern="^(?=.*[A-Z])(?=.*\d).+$"  placeholder="Enter the Reference Number">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="formLabelAccidentDate" class="col-sm-2  ">Accident Date <span class="mandatoryNotation"> * </span> :</label>
+				<div class="col-sm-3">
+					<input type="text" required class="form-control" id="formIdAccidentDate"  required placeholder="Enter the Accident Date">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="formLabelAccidentTime" class="col-sm-2  ">Accident Time <span class="mandatoryNotation"> * </span>:</label>
+				<div class="col-sm-3">
+					<input type="text" required class="form-control" id="formIdAccidentTime" required placeholder="Enter the Accident Time">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="formLabelAccidentType" class="col-sm-2  ">Accident Type <span class="mandatoryNotation"> * </span> :</label>
+				<div class="col-sm-3">
+					<select class="form-control" id="formIdAccidentType" required>
+                            <option value="">Select Accident Type</option>
+                            <option value="Hit Pedestrian">Hit Pedestrian</option>
+                            <option value="Head On">Head On</option>
+                            <option value="Side Swipe">Side Swipe</option>
+                            <option value="Hit From Rear">Hit From Rear</option>
+                            <option value="Hit Animal">Hit Animal</option>
+                            <option value="Ran off the Road">Ran off the Road</option>
+                        </select>
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="formLabelCity" class="col-sm-2  ">City <span class="mandatoryNotation"> * </span> :</label>
+				<div class="col-sm-3">
+					<input type="text" required class="form-control" id="formIdCity" required placeholder="Enter the City">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="formLabelDistrict" class="col-sm-2  ">District <span class="mandatoryNotation"> * </span> :</label>
+				<div class="col-sm-3">
+					<select class="form-control" id="formIdDistrict" required>
+                            <option value="">Select Any District</option>
+                            <option value="Malapuram">Malapuram</option>
+                            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                            <option value="Ernakulam">Ernakulam</option>
+                            <option value="Thrissur">Thrissur</option>
+                            <option value="Kozhikode">Kozhikode</option>
+                            <option value="Palakkad">Palakkad</option>
+                            <option value="Kollam">Kollam</option>
+                            <option value="Kannur">Kannur</option>
+                            <option value="Alappuzha">Alappuzha</option>
+                            <option value="Kottayam">Kottayam</option>
+                            <option value="Kasaragod">Kasaragod</option>
+                            <option value="Pathanamthitta">Pathanamthitta</option>
+                            <option value="Idukki">Idukki</option>
+                            <option value="Wayanad">Wayanad</option>
+                        </select>
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="formLabelNumberOfVehicles" class="col-sm-2  ">Number of vehicles <span class="mandatoryNotation"> * </span> :</label>
+				<div class="col-sm-3">
+					<input type="number" required class="form-control" id="formIdNumberOfVehicles" required min="1" placeholder="Enter the Number of vehicles">
+				</div>
+			</div>
+
+			<div class="form-group row">
+				<label for="formLabelNumberOfCasualties" class="col-sm-2  ">Number of casualties <span class="mandatoryNotation"> * </span> :</label>
+				<div class="col-sm-3">
+					<input type="number" required class="form-control" id="formIdNumberOfCasualties" required placeholder="Enter the Number of casualties">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="formLabelAccidentImages" class="col-sm-2  ">Accident Images<span class="mandatoryNotation"> * </span>:</label>
+				<div class="col-sm-3">
+					<input type="file" id="formIdAccidentImages" >
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="formLabelReportingOfficer" class="col-sm-2  ">Reporting officer name:</label>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="formIdReportingOfficer"  placeholder="Enter the reporting officer name">
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-4"></div>
+				<input type="submit" id="saveButton" value="Save" class="btn btn-primary">
+				<input type="reset" value="Clear" id="cancelButton" class=" btn  btn-primary">
+			</div>
+		</form>
+	</div>
+	</div>
+</body>
+</html>
